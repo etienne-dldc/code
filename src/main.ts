@@ -33,8 +33,26 @@ monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions({
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
+const defaultInitialContent = `// Welcome !
+
+// This is a simple website to write
+// some quick JavaScript / TypeScript code.
+const isItCool: boolean = true;
+
+// It supports JSX
+const elem = <h1>Nice !</h1>;
+
+// You can format using prettier with cmd/ctrl + s
+// and zoom with cmd/ctrl + wheel
+
+console.log("Enjoy !");
+
+// Made by [@EtienneTech](https://dldc.dev/twitter)
+`;
+
 const STORAGE_KEY = "monaco-editor-value";
-const initialContent = localStorage.getItem(STORAGE_KEY) ?? "";
+const initialContent =
+  localStorage.getItem(STORAGE_KEY) ?? defaultInitialContent;
 const modelUri = monaco.Uri.file("file.tsx");
 
 const codeModel = monaco.editor.createModel(
