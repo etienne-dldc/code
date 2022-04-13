@@ -48,6 +48,7 @@ const elem = <h1>Nice !</h1>;
 console.log("Enjoy !");
 
 // Made by [@EtienneTech](https://dldc.dev/twitter)
+// Code on [GitHub](https://github.com/etienne-dldc/code)
 `;
 
 const STORAGE_KEY = "monaco-editor-value";
