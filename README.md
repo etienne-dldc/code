@@ -1,4 +1,6 @@
-# code.etienne.tech
+# Code - Etienne.tech
+
+[code.etienne.tech](https://code.etienne.tech/)
 
 Full page monaco editor with prettier and TSX
 
